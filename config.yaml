@@ -1,20 +1,42 @@
 teams:
+- name: ehr-wallet-maintainers
+  maintainers:
+  - ryjones
+  members:
+  - rstellar
+  - sbhavani
+- name: eudiplo-admins
+  maintainers:
+  - cre8
+- name: eudiplo-maintainers
+  maintainers:
+  - cre8
 - name: dcql-ts-maintainers
   maintainers:
   - TimoGlastra
   members:
   - auer-martin
+  - hacdias
 - name: dcql-ts-admin
   maintainers:
   - TimoGlastra
   members:
   - auer-martin
+- name: pydentity-wallet-maintainers
+  maintainers:
+  - PatStLouis
+  members:
+  - jamshale
+  - esune
+  - loneil
+  - Jsyro
 - name: oid4vc-ts-maintainers
   maintainers:
   - TimoGlastra
   members:
   - auer-martin
   - berendsliedrecht
+  - hacdias
   - marsouin
 - name: oid4vc-ts-admin
   maintainers:
@@ -38,23 +60,6 @@ teams:
   - jorgefl0
   members:
   - skullquake
-- name: identity-credential-admins
-  maintainers:
-  - davidz25
-- name: identity-credential-maintainers
-  maintainers:
-  - davidz25
-  members:
-  - 15characterlimi
-  - koukarine
-  - dyiop
-  - GarethCOliver
-  - sethmoo
-  - sorotokin
-  - suzannajiwani
-  - kdeus
-  - hzawawy
-  - TheCoryBarker
 - name: lcw-maintainers
   maintainers:
   - alexfigtree
@@ -70,12 +75,23 @@ teams:
   - ryjones
   members:
   - SeanBohan
-  - strawberry-baked-alaska
 - name: mdl-js-maintainers
   maintainers:
   - lukasjhan
   members:
   - hismethod
+- name: hdcx-js-maintainers
+  maintainers:
+  - lukasjhan
+  members:
+  - aceshim
+  - yunseorim1116
+- name: trs-maintainers
+  maintainers:
+  - lukasjhan
+  members:
+  - aceshim
+  - yunseorim1116
 - name: multiformat-vc-ios-maintainers
   maintainers:
   - gauravping
@@ -98,24 +114,28 @@ teams:
   - jovfer
   members:
   - Abdulbois
+- name: sd-jwt-vc-dm-maintainers
+  maintainers:
+  - lukasjhan
+  members:
+  - Dtitkaio
+  - Takashiyamam
 - name: solid-data-wallet-maintainers
   maintainers:
-  - tkuhrt
+  - hzbarcea
   members:
   - KyraAssaad
   - edwardsph
   - seilagonzalez
   - NSeydoux
-  - hzbarcea
 - name: tac
   maintainers:
-  - tkuhrt
+  - skounis
   members:
   - davidz25
   - rolsonquadras
   - petecool
   - aceshim
-  - skounis
   - swcurran
   - wenjing
 - name: tsp-maintainers
@@ -124,18 +144,24 @@ teams:
   members:
   - tweedegolf-marc
   - marlonbaeten
+  - pohlm01
+  - michielp1807
+  - chengr4
+  - bakayu
 - name: tuvali-maintainers
   maintainers:
-  - tkuhrt
+  - swatigoel
   members:
   - gsasikumar
   - ckm007
-  - swatigoel
 - name: vc-api-developers
   maintainers:
   - jrhender
   members:
   - nichonien
+  - ni3gavhane
+  - mesaresachin
+  - ShikharBhatt
 - name: vc-api-maintainers
   maintainers:
   - jrhender
@@ -152,10 +178,19 @@ repositories:
   teams:
     tac: maintain
   visibility: public
+- name: eudiplo
+  teams:
+    eudiplo-maintainers: maintain
+    eudiplo-admins: admin
+  visibility: public
 - name: dcql-ts
   teams:
     dcql-ts-maintainers: maintain
     dcql-ts-admin: admin
+  visibility: public
+- name: ehr-wallet
+  teams:
+    ehr-wallet-maintainers: maintain
   visibility: public
 - name: governance
   teams:
@@ -179,11 +214,6 @@ repositories:
   teams:
     fwos-maintainers: maintain
   visibility: public
-- name: identity-credential
-  teams:
-    identity-credential-admins: admin
-    identity-credential-maintainers: maintain
-  visibility: public
 - name: learner-credential-wallet
   teams:
     lcw-maintainers: maintain
@@ -191,9 +221,16 @@ repositories:
 - name: mdl-js
   teams:
     mdl-js-maintainers: maintain
+- name: hDCX-js
+  teams:
+    hdcx-js-maintainers: maintain
 - name: multiformat-vc-ios
   teams:
     multiformat-vc-ios-maintainers: write
+  visibility: public
+- name: PyDentity-Wallet
+  teams:
+    pydentity-wallet-maintainers: write
   visibility: public
 - name: sd-jwt-dotnet
   teams:
@@ -211,9 +248,17 @@ repositories:
   teams:
     sd-jwt-rust-maintainers: maintain
   visibility: public
+- name: sd-jwt-vc-dm
+  teams:
+    sd-jwt-vc-dm-maintainers: maintain
+  visibility: public
 - name: solid-data-wallet
   teams:
     solid-data-wallet-maintainers: maintain
+  visibility: public
+- name: trs
+  teams:
+    trs-maintainers: maintain
   visibility: public
 - name: tsp
   teams:
